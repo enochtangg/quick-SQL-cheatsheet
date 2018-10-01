@@ -72,7 +72,7 @@ A quick reminder of all relevent SQL queries and examples on how to use them.
 * `UNION` operator only selects distinct values, `UNION ALL` will allow duplicates
 
 ### **GROUP BY**: statement often used with aggregate functions (COUNT, MAX, MIN, SUM, AVG) to group the result-set by one or more columns
-* `SELECT` column_names `FROM` table_name `WHERE` condition `GROUP BY` column_names `ORDER BY` column_names;
+* `SELECT` column_name1, COUNT(column_name2) `FROM` table_name `WHERE` condition `GROUP BY` column_name1 `ORDER BY` COUNT(column_name2) DESC;
 
 ### **HAVING**: this clause was added to SQL because the WHERE keyword could not be used with aggregated functions
 * `SELECT` `COUNT`(column_name1), column_name2 `FROM` table `GROUP BY` column_name2 `HAVING` `COUNT(`column_name1`)` > 5;
@@ -127,9 +127,6 @@ A quick reminder of all relevent SQL queries and examples on how to use them.
 
 ### **Self JOIN**: a regular join, but the table is joined with itself
 * `SELECT` column_names `FROM` table1 T1, table1 T2 `WHERE` condition;
-
-
-
 
 
 
