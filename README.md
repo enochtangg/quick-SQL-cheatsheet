@@ -82,17 +82,17 @@ A quick reminder of all SQL queries and examples on how to use them.
 # 3. Reporting Queries
 
 ### **COUNT**: returns the # of occurrences
-* `SELECT COUNT``(``DISTINCT` column_name`)`;
+* `SELECT COUNT(DISTINCT` column_name`)`;
 
 ### **MIN() AND MAX()**: returns the smallest/largest value of the selected column
-* `SELECT MIN``(`column_names`)` `FROM` table_name `WHERE` condition;
-* `SELECT MAX``(`column_names`)` `FROM` table_name `WHERE` condition;
+* `SELECT MIN(`column_names`) FROM` table_name `WHERE` condition;
+* `SELECT MAX(`column_names`) FROM` table_name `WHERE` condition;
 
 ### **AVG()**: returns the average value of a numeric column
-* `SELECT AVG``(`column_name`)` `FROM` table_name `WHERE` condition;
+* `SELECT AVG(`column_name`) FROM` table_name `WHERE` condition;
 
 ### **SUM()**: returns the total sum of a numeric column
-* `SELECT SUM``(`column_name`)` `FROM` table_name `WHERE` condition;
+* `SELECT SUM(`column_name`) FROM` table_name `WHERE` condition;
 
 <a name="joins"></a>
 # 4. Join Queries
