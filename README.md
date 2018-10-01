@@ -1,5 +1,6 @@
-# Quick SQL Cheatsheet
-A quick reminder of all SQL queries and examples on how to use them. 
+# SQL Cheatsheet Sheet
+
+A quick reminder of all relevent SQL queries and examples on how to use them. 
 
 # Table of Contents 
 1. [ Finding Data Queries. ](#find)
@@ -63,6 +64,20 @@ A quick reminder of all SQL queries and examples on how to use them.
 * `SELECT` column_name `AS` alias_name1, column_name2 `AS` alias_name2;
 * `SELECT` column_name1, column_name2 + ‘, ‘ + column_name3 `AS` alias_name;
 
+### **UNION**: operator used to combine the result-set of two or more SELECT statements
+* Each SELECT statement winthin UNION must have the same number of columns
+* The columns must have similar data types
+* The columns in each SELECT statement must also be in the same order
+* `SELECT` columns_names `FROM` table1 `UNION SELECT` column_name `FROM` table2;
+* `UNION` operator only selects distinct values, `UNION ALL` will allow duplicates
+
+### **GROUP BY**: statement often used with aggregate functions (COUNT, MAX, MIN, SUM, AVG) to group the result-set by one or more columns
+* `SELECT` column_names `FROM` table_name `WHERE` condition `GROUP BY` column_names `ORDER BY` column_names;
+
+### **HAVING**: this clause was added to SQL because the WHERE keyword could not be used with aggregated functions
+* `SELECT` `COUNT`(column_name1), column_name2 `FROM` table `GROUP BY` column_name2 `HAVING` `COUNT(`column_name1`)` > 5;
+
+
 <a name="modify"></a>
 # 2. Data Modification Queries
 
@@ -82,19 +97,43 @@ A quick reminder of all SQL queries and examples on how to use them.
 # 3. Reporting Queries
 
 ### **COUNT**: returns the # of occurrences
-* `SELECT COUNT(DISTINCT` column_name`)`;
+* `SELECT COUNT``(``DISTINCT` column_name`)`;
 
 ### **MIN() AND MAX()**: returns the smallest/largest value of the selected column
-* `SELECT MIN(`column_names`) FROM` table_name `WHERE` condition;
-* `SELECT MAX(`column_names`) FROM` table_name `WHERE` condition;
+* `SELECT MIN``(`column_names`)` `FROM` table_name `WHERE` condition;
+* `SELECT MAX``(`column_names`)` `FROM` table_name `WHERE` condition;
 
 ### **AVG()**: returns the average value of a numeric column
-* `SELECT AVG(`column_name`) FROM` table_name `WHERE` condition;
+* `SELECT AVG``(`column_name`)` `FROM` table_name `WHERE` condition;
 
 ### **SUM()**: returns the total sum of a numeric column
-* `SELECT SUM(`column_name`) FROM` table_name `WHERE` condition;
+* `SELECT SUM``(`column_name`)` `FROM` table_name `WHERE` condition;
 
 <a name="joins"></a>
 # 4. Join Queries
+
+###  **INNER JOIN**: returns records that have matching value in both tables
+* `SELECT` column_names `FROM` table1 `INNER JOIN` table2 `ON` table1.column_name=table2.column_name;
+* `SELECT` table1.column_name1, table2.column_name2, table3.column_name3 `FROM` ((table1 `INNER JOIN` table2 `ON` relationship) `INNER JOIN` table3 `ON` relationship);
+
+### **LEFT (OUTER) JOIN**: returns all records from the left table (table1), and the matched records from the right table (table2)
+* `SELECT` column_names `FROM` table1 `LEFT JOIN` table2 `ON` table1.column_name=table2.column_name;
+
+### **RIGHT (OUTER) JOIN**: returns all records from the right table (table2), and the matched records from the left table (table1)
+* `SELECT` column_names `FROM` table1 `RIGHT JOIN` table2 `ON` table1.column_name=table2.column_name;
+
+### **FULL (OUTER) JOIN**: returns all records when there is a match in either left or right table
+* `SELECT` column_names FRO`M table1 ``FULL OUTER JOIN`` table2 `ON` table1.column_name=table2.column_name;
+
+### **Self JOIN**: a regular join, but the table is joined with itself
+* `SELECT` column_names `FROM` table1 T1, table1 T2 `WHERE` condition;
+
+
+
+
+
+
+
+
 
 
