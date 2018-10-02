@@ -14,7 +14,7 @@ A quick reminder of all relevent SQL queries and examples on how to use them.
 ### **SELECT**: used to select data from a database
 * `SELECT` * `FROM` table_name;
 
-### **DISTINCT**: filters away duplicates and returns rows that of specified column
+### **DISTINCT**: filters away duplicate values and returns rows of specified column
 * `SELECT DISTINCT` column_name;
 
 ### **WHERE**: used to filter records/rows
