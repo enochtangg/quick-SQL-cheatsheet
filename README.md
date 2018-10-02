@@ -30,8 +30,9 @@ A quick reminder of all relevent SQL queries and examples on how to use them.
 * `SELECT` * `FROM` table_name `ORDER BY` column1 `ASC`, column2 `DESC`;
 
 ### **SELECT TOP**: used to specify the number of records to return from top of table
-- `SELECT TOP` number columns_names `FROM` table_name `WHERE` condition;
-- `SELECT TOP` percent columns_names `FROM` table_name `WHERE` condition;
+* `SELECT TOP` number columns_names `FROM` table_name `WHERE` condition;
+* `SELECT TOP` percent columns_names `FROM` table_name `WHERE` condition;
+* Not all database systems support `SELECT TOP`. MySQL uses the LIMIT clause to select a limited # of records
 
 ### **LIKE**: operator used in a WHERE clause to search for a specific pattern in a column
 * % (percent sign) is a wildcard character that represents zero, one, or multiple characters
