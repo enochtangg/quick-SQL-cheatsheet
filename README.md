@@ -32,7 +32,7 @@ A quick reminder of all relevent SQL queries and examples on how to use them.
 ### **SELECT TOP**: used to specify the number of records to return from top of table
 * `SELECT TOP` number columns_names `FROM` table_name `WHERE` condition;
 * `SELECT TOP` percent columns_names `FROM` table_name `WHERE` condition;
-* Not all database systems support `SELECT TOP`. The MySQL equivalent is the `LIMIT`
+* Not all database systems support `SELECT TOP`. The MySQL equivalent is the `LIMIT` clause
 * `SELECT` column_names `FROM` table_name `LIMIT` offset, count;
 
 ### **LIKE**: operator used in a WHERE clause to search for a specific pattern in a column
