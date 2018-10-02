@@ -39,8 +39,8 @@ A quick reminder of all relevent SQL queries and examples on how to use them.
 * % (percent sign) is a wildcard character that represents zero, one, or multiple characters
 * _ (underscore) is a wildcard character that represents a single character
 * `SELECT` column_names `FROM` table_name `WHERE` column_name `LIKE` pattern;
-* `LIKE` ‘a%’ (find any values that start with “a”)
-* `LIKE` ‘%a’ (find any values that does end with “a”)
+* `LIKE` ‘a%’ (find any values that starts with “a”)
+* `LIKE` ‘%a’ (find any values that ends with “a”)
 * `LIKE` ‘%or%’ (find any values that have “or” in any position)
 * `LIKE` ‘_r%’ (find any values that have “r” in the second position)
 * `LIKE` ‘a_%_%’ (find any values that start with “a” and are at least 3 characters in length)
