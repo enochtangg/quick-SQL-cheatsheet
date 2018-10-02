@@ -123,7 +123,7 @@ A quick reminder of all relevent SQL queries and examples on how to use them.
 * `SELECT` column_names `FROM` table1 `RIGHT JOIN` table2 `ON` table1.column_name=table2.column_name;
 
 ### **FULL (OUTER) JOIN**: returns all records when there is a match in either left or right table
-* `SELECT` column_names FRO`M table1 ``FULL OUTER JOIN`` table2 `ON` table1.column_name=table2.column_name;
+* `SELECT` column_names `FROM` table1 ``FULL OUTER JOIN`` table2 `ON` table1.column_name=table2.column_name;
 
 ### **Self JOIN**: a regular join, but the table is joined with itself
 * `SELECT` column_names `FROM` table1 T1, table1 T2 `WHERE` condition;
