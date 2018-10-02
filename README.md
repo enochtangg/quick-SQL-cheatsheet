@@ -1,4 +1,4 @@
-# SQL Cheatsheet Sheet
+# Quick SQL Cheatsheet
 
 A quick reminder of all relevent SQL queries and examples on how to use them. 
 
