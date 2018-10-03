@@ -1,6 +1,6 @@
 # Quick SQL Cheatsheet
 
-A quick reminder of all relevent SQL queries and examples on how to use them. 
+A quick reminder of all relevant SQL queries and examples on how to use them. 
 
 # Table of Contents 
 1. [ Finding Data Queries. ](#find)
@@ -67,7 +67,7 @@ A quick reminder of all relevent SQL queries and examples on how to use them.
 * `SELECT` column_name1, column_name2 + ‘, ‘ + column_name3 `AS` alias_name;
 
 ### **UNION**: operator used to combine the result-set of two or more SELECT statements
-* Each SELECT statement winthin UNION must have the same number of columns
+* Each SELECT statement within UNION must have the same number of columns
 * The columns must have similar data types
 * The columns in each SELECT statement must also be in the same order
 * `SELECT` columns_names `FROM` table1 `UNION SELECT` column_name `FROM` table2;
