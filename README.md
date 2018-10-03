@@ -101,7 +101,7 @@ A quick reminder of all relevent SQL queries and examples on how to use them.
 ### **COUNT**: returns the # of occurrences
 * `SELECT COUNT (DISTINCT` column_name`)`;
 
-### **MIN() AND MAX()**: returns the smallest/largest value of the selected column
+### **MIN() and MAX()**: returns the smallest/largest value of the selected column
 * `SELECT MIN (`column_names`) FROM` table_name `WHERE` condition;
 * `SELECT MAX (`column_names`) FROM` table_name `WHERE` condition;
 
