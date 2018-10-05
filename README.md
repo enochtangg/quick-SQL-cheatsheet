@@ -23,6 +23,7 @@ A quick reminder of all relevant SQL queries and examples on how to use them.
 * `SELECT` * `FROM` table_name `WHERE` condition1 `OR` condition2;
 * `SELECT` * `FROM` table_name `WHERE NOT` condition;
 * `SELECT` * `FROM` table_name `WHERE` condition1 `AND` (condition2 `OR` condition3);
+* `SELECT` * `FROM` table_name `WHERE EXISTS` (`SELECT` column_name `FROM` table_name `WHERE` condition);
 
 ### **ORDER BY**: used to sort the result-set in ascending or descending order
 * `SELECT` * `FROM` table_name `ORDER BY` column;
