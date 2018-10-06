@@ -9,6 +9,7 @@ Pull requests are welcome!
 2. [ Data Modification Queries. ](#modify)
 3. [ Reporting Queries. ](#report)
 4. [ Join Queries. ](#joins)
+5. [ View Queries. ](#view)
 
 <a name="find"></a>
 # 1. Finding Data Queries
@@ -137,6 +138,19 @@ Pull requests are welcome!
 
 ### **Self JOIN**: a regular join, but the table is joined with itself
 * `SELECT` column_names `FROM` table1 T1, table1 T2 `WHERE` condition;
+
+<a name="view"></a>
+# 5. View Queries
+
+### **CREATE**: create a view
+* `CREATE VIEW v1 AS SELECT R1, R2 FROM table WHERE condition`;
+
+### **SELECT**: retrieve a view
+* `SELECT * FROM v1`;
+
+### **SELECT**: drop a view
+* `DROP VIEW v1`;
+
 
 
 
