@@ -1,8 +1,8 @@
-# Quick SQL Cheatsheet
+﻿# Quick SQL Cheatsheet
 
 A quick reminder of all relevant SQL queries and examples on how to use them. 
 
-Pull requests are welcome!
+Pull requests are welcome:)
 
 # Table of Contents 
 1. [ Finding Data Queries. ](#find)
