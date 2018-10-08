@@ -10,6 +10,7 @@ Pull requests are welcome!
 3. [ Reporting Queries. ](#report)
 4. [ Join Queries. ](#joins)
 5. [ View Queries. ](#view)
+6. [ Altering Table Columns Queries.](#alter)
 
 <a name="find"></a>
 # 1. Finding Data Queries
@@ -151,7 +152,17 @@ Pull requests are welcome!
 ### **SELECT**: drop a view
 * `DROP VIEW v1`;
 
+<a name="alter"></a>
+# 6. Altering Table Columns Queries
 
+### **ADD**: add a column
+* `ALTER TABLE` table_name `ADD` column_name column_definition;
+
+### **MODIFY**: change data type of column
+* `ALTER TABLE` table_name `MODIFY` column_name column_type;
+
+### **DROP**: delete a column
+* `ALTER TABLE` table_name `DROP COLUMN` column_name;
 
 
 
