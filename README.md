@@ -2,7 +2,8 @@
 
 A quick reminder of all relevant SQL queries and examples on how to use them. 
 
-Pull requests are welcome!
+This repository is constantly being updated and added to by the community. 
+Pull requests are welcome. Enjoy!
 
 # Table of Contents 
 1. [ Finding Data Queries. ](#find)
@@ -10,7 +11,7 @@ Pull requests are welcome!
 3. [ Reporting Queries. ](#report)
 4. [ Join Queries. ](#joins)
 5. [ View Queries. ](#view)
-6. [ Altering Table Columns Queries.](#alter)
+6. [ Altering Table Queries.](#alter)
 
 <a name="find"></a>
 # 1. Finding Data Queries
@@ -153,7 +154,7 @@ Pull requests are welcome!
 * `DROP VIEW v1`;
 
 <a name="alter"></a>
-# 6. Altering Table Columns Queries
+# 6. Altering Table Queries
 
 ### **ADD**: add a column
 * `ALTER TABLE` table_name `ADD` column_name column_definition;
