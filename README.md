@@ -150,7 +150,7 @@ Pull requests are welcome. Enjoy!
 ### **SELECT**: retrieve a view
 * `SELECT * FROM v1`;
 
-### **SELECT**: drop a view
+### **DROP**: drop a view
 * `DROP VIEW v1`;
 
 <a name="alter"></a>
