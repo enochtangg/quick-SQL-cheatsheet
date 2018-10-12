@@ -144,13 +144,13 @@
 # 5. 视图查询
 
 ### **CREATE**: 创建视图
-* `CREATE VIEW v1 AS SELECT R1, R2 FROM table WHERE condition`;
+* `CREATE VIEW` view_name `AS SELECT` column1, column2 FROM table_name WHERE condition;
 
 ### **SELECT**: 检索视图
-* `SELECT * FROM v1`;
+* `SELECT` * `FROM` view_name;
 
 ### **DROP**: 删除视图
-* `DROP VIEW v1`;
+* `DROP VIEW` view_name;
 
 <a name="alter"></a>
 # 6. 修改表的查询
