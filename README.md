@@ -145,13 +145,13 @@ Pull requests are welcome. Enjoy!
 # 5. View Queries
 
 ### **CREATE**: create a view
-* `CREATE VIEW v1 AS SELECT R1, R2 FROM table WHERE condition`;
+* `CREATE VIEW` view_name `AS SELECT` column1, column2 FROM table_name WHERE condition;
 
 ### **SELECT**: retrieve a view
-* `SELECT * FROM v1`;
+* `SELECT` * `FROM` view_name;
 
 ### **DROP**: drop a view
-* `DROP VIEW v1`;
+* `DROP VIEW` view_name;
 
 <a name="alter"></a>
 # 6. Altering Table Queries
