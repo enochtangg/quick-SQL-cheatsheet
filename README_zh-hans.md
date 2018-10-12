@@ -144,7 +144,7 @@
 # 5. 视图查询
 
 ### **CREATE**: 创建视图
-* `CREATE VIEW` view_name `AS SELECT` column1, column2 FROM table_name WHERE condition;
+* `CREATE VIEW` view_name `AS SELECT` column1, column2 `FROM` table_name `WHERE` condition;
 
 ### **SELECT**: 检索视图
 * `SELECT` * `FROM` view_name;
