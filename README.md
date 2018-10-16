@@ -90,6 +90,15 @@ Pull requests are welcome. Enjoy!
 ### **HAVING**: this clause was added to SQL because the WHERE keyword could not be used with aggregated functions
 * `SELECT` `COUNT`(column_name1), column_name2 `FROM` table `GROUP BY` column_name2 `HAVING` `COUNT(`column_name1`)` > 5;
 
+### **WITH**: often used for retrieving hierarchical data or re-using temp result set several times in a query. Also referred to as "Common Table Expression"
+* `WITH RECURSIVE` cte `AS` (
+    `SELECT` c0.* `FROM` categories `AS` c0 `WHERE` id = 1 # Starting point
+    `UNION ALL`
+    `SELECT` c1.* `FROM` categories `AS` c1 `JOIN` cte `ON` c1.parent_category_id = cte.id
+  )
+  `SELECT` *
+  `FROM` cte
+
 
 <a name="modify"></a>
 # 2. Data Modification Queries
