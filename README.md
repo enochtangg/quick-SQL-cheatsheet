@@ -72,12 +72,20 @@ Pull requests are welcome. Enjoy!
 * `SELECT` column_name `AS` alias_name1, column_name2 `AS` alias_name2;
 * `SELECT` column_name1, column_name2 + ‘, ‘ + column_name3 `AS` alias_name;
 
-### **UNION**: operator used to combine the result-set of two or more SELECT statements
+### **UNION**: set operator used to combine the result-set of two or more SELECT statements
 * Each SELECT statement within UNION must have the same number of columns
 * The columns must have similar data types
 * The columns in each SELECT statement must also be in the same order
 * `SELECT` columns_names `FROM` table1 `UNION SELECT` column_name `FROM` table2;
 * `UNION` operator only selects distinct values, `UNION ALL` will allow duplicates
+
+### **INTERSECT**: set operator which is used to return the records that two SELECT statements have in common
+* Generally used the same way as **UNION** above
+* `SELECT` columns_names `FROM` table1 `INTERSECT SELECT` column_name `FROM` table2;
+
+### **EXCEPT**: set operator used to return all the records in the first SELECT statement that are not found in the second SELECT statement
+* Generally used the same way as **UNION** above
+* `SELECT` columns_names `FROM` table1 `EXCEPT SELECT` column_name `FROM` table2;
 
 ### **ANY|ALL**: operator used to check subquery conditions used within a WHERE or HAVING clauses
 * The `ANY` operator returns true if any subquery values meet the condition
@@ -87,7 +95,7 @@ Pull requests are welcome. Enjoy!
 ### **GROUP BY**: statement often used with aggregate functions (COUNT, MAX, MIN, SUM, AVG) to group the result-set by one or more columns
 * `SELECT` column_name1, COUNT(column_name2) `FROM` table_name `WHERE` condition `GROUP BY` column_name1 `ORDER BY` COUNT(column_name2) DESC;
 
-### **HAVING**: this clause was added to SQL because the WHERE keyword could not be used with aggregated functions
+### **HAVING**: this clause was added to SQL because the WHERE keyword could not be used with aggregate functions
 * `SELECT` `COUNT`(column_name1), column_name2 `FROM` table `GROUP BY` column_name2 `HAVING` `COUNT(`column_name1`)` > 5;
 
 ### **WITH**: often used for retrieving hierarchical data or re-using temp result set several times in a query. Also referred to as "Common Table Expression"
