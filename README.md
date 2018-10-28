@@ -12,6 +12,7 @@ Pull requests are welcome. Enjoy!
 4. [ Join Queries. ](#joins)
 5. [ View Queries. ](#view)
 6. [ Altering Table Queries.](#alter)
+7. [ Changing display format ](#format)
 
 <a name="find"></a>
 # 1. Finding Data Queries
@@ -182,8 +183,27 @@ Pull requests are welcome. Enjoy!
 ### **DROP**: delete a column
 * `ALTER TABLE` table_name `DROP COLUMN` column_name;
 
+<a name="format"></a>
+         
+# 7. Changing formatting of output
 
-
-
-
-
+* `SELECT * FROM table;`
+```
++----+------+
+| id | name |
++----+------+
+|  1 |  doe |
+|  2 | john |
++----+------+
+```
+### 
+* `SELECT * FROM table\G`
+```
+*************************** 1. row ***************************
+       id: 1
+     name: doe
+     
+*************************** 2. row ***************************
+       id: 2
+     name: john
+```
