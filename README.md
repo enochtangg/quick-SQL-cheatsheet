@@ -11,7 +11,8 @@ Pull requests are welcome. Enjoy!
 3. [ Reporting Queries. ](#report)
 4. [ Join Queries. ](#joins)
 5. [ View Queries. ](#view)
-6. [ Altering Table Queries.](#alter)
+6. [ Altering Table Queries. ](#alter)
+7. [ Query Comments. ](#comment)
 
 <a name="find"></a>
 # 1. Finding Data Queries
@@ -182,6 +183,20 @@ Pull requests are welcome. Enjoy!
 ### **DROP**: delete a column
 * `ALTER TABLE` table_name `DROP COLUMN` column_name;
 
+<a name="comment"></a>
+# 7. Query Comments
+
+### **SINGLE LINE**: starts with `--` .
+* `--DELETE * FROM table_name;`
+
+### **MULTI LINE**: starts with `/*` ends with `*/` .
+* ```
+  /*  Multi
+      Line
+      Breaks */
+
+      SELECT * FROM table_name;
+  ```
 
 
 
