@@ -12,6 +12,7 @@ Pull requests are welcome. Enjoy!
 4. [ Join Queries. ](#joins)
 5. [ View Queries. ](#view)
 6. [ Altering Table Queries.](#alter)
+7. [Indexing Queries.](#index)
 
 <a name="find"></a>
 # 1. Finding Data Queries
@@ -183,7 +184,14 @@ Pull requests are welcome. Enjoy!
 * `ALTER TABLE` table_name `DROP COLUMN` column_name;
 
 
+<a name="index"></a>
+# 7. Indexing Queries
 
+### **CREATE**: Creates an index on a table.
+* `CREATE INDEX` index_name `ON` table_name;
+* `CREATE INDEX` index_name `ON` table_name (column_name);
+* `CREATE UNIQUE INDEX` index_name `ON` table_name (column_name);
+* `CREATE INDEX` index_name `ON` table_name (column1, column2);
 
-
-
+### **DROP**: Delete an index in a table
+* `DROP INDEX` index_name;
