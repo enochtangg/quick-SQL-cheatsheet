@@ -80,7 +80,7 @@
 
 ### **ANY|ALL**: 用于检查 WHERE 或 HAVING 子句中使用的子查询条件的运算符
 * `ANY` 如果任何子查询值满足条件，则返回 true。
-* `ALL` 如果任何子查询值满足条件，则返回 true。
+* `ALL` 如果所有子查询值都满足条件，则返回 true。
 * `SELECT` columns_names `FROM` table1 `WHERE` column_name operator (`ANY`|`ALL`) (`SELECT` column_name `FROM` table_name `WHERE` condition);
 
 ### **GROUP BY**: 通常与聚合函数（COUNT，MAX，MIN，SUM，AVG）一起使用，用于将结果集分组为一列或多列
