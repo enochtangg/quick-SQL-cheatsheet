@@ -12,6 +12,7 @@ Pull requests are welcome. Enjoy!
 4. [ Join Queries. ](#joins)
 5. [ View Queries. ](#view)
 6. [ Altering Table Queries.](#alter)
+7. [ Creating Table Query.](#create)
 
 <a name="find"></a>
 # 1. Finding Data Queries
@@ -182,8 +183,13 @@ Pull requests are welcome. Enjoy!
 ### **DROP**: delete a column
 * `ALTER TABLE` table_name `DROP COLUMN` column_name;
 
+<a name="create"></a>
+# 7. Creating Table Query
 
-
-
-
-
+### **CREATE**: create a table
+* `CREATE TABLE` table_name `(` <br />
+   `column1` `datatype`, <br />
+   `column2` `datatype`, <br />
+   `column3` `datatype`, <br />
+   `column4` `datatype`, <br />
+   `);`
