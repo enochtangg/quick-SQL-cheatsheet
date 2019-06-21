@@ -123,6 +123,7 @@ Pull requests are welcome. Enjoy!
 ### **DELETE**: used to delete existing records/rows in a table
 * `DELETE FROM` table_name `WHERE` condition;
 * `DELETE` * `FROM` table_name;
+* `TRUNCATE` table_name;
 
 <a name="report"></a>
 # 3. Reporting Queries
