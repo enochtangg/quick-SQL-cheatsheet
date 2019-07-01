@@ -214,3 +214,21 @@ A block of code that automatically gets executed before or after an insert, upda
  
 ### **Drop Trigger**:
 * `drop trigger if exists` trigger_name;
+
+# 9. Creating Stored Procedure
+Stored procedure store and organise our SQL code, provide faster execution and data security.
+
+### **Create Procedure**:
+ `delimiter` $\$
+`create procedure` procedure_name`()`
+`begin`
+<span>&nbsp;&nbsp;&nbsp;&nbsp;</span> `------our_sql_query -------`
+`end ` $\$
+`delimiter` ;
+
+### **Call Procedure**: 
+* `call` procedure_name`()`;
+ 
+### **Drop Procedure**:
+* `drop procedure if exists` procedure_name;
+
