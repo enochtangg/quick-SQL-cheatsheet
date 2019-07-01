@@ -13,6 +13,7 @@ Pull requests are welcome. Enjoy!
 5. [ View Queries. ](#view)
 6. [ Altering Table Queries.](#alter)
 7. [ Creating Table Query.](#create)
+8. [ Trigger Query. ](#trigger)
 
 <a name="find"></a>
 # 1. Finding Data Queries
@@ -193,3 +194,23 @@ Pull requests are welcome. Enjoy!
    `column3` `datatype`, <br />
    `column4` `datatype`, <br />
    `);`
+<a name="trigger"></a>
+# 8. Creating Triggers
+A block of code that automatically gets executed before or after an insert, update or delete statement. `old` and `new` keywords enable us to access columns in the rows affected by a trigger. Example : `new`.column_name
+
+### **Create Trigger**:
+ `delimiter` $\$
+`create trigger` trigger_name
+$\qquad$`after | before` `insert | delete | update` `on` table_name
+$\qquad$`for each row`
+`begin`
+$\qquad$`------sql_query -------`
+`end ` $\$
+`delimiter` ;
+
+### **Show Triggers**: 
+* `show triggers`;
+* `show triggers` `like` %search_string%'; 
+ 
+### **Drop Trigger**:
+* `drop trigger if exists` trigger_name;
