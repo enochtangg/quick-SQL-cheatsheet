@@ -200,7 +200,7 @@ A block of code that automatically gets executed before or after an insert, upda
 
 ### **Create Trigger**:
  `delimiter` $\$<br />
-`create trigger` trigger_name
+`create trigger` trigger_name<br />
  <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>`after | before` `insert | delete | update` `on` table_name<br />
  <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>`for each row`<br />
 `begin`<br />
