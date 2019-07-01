@@ -201,10 +201,10 @@ A block of code that automatically gets executed before or after an insert, upda
 ### **Create Trigger**:
  `delimiter` $\$
 `create trigger` trigger_name
-$\qquad$`after | before` `insert | delete | update` `on` table_name
-$\qquad$`for each row`
+ <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>`after | before` `insert | delete | update` `on` table_name
+ <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>`for each row`
 `begin`
-$\qquad$`------sql_query -------`
+<span>&nbsp;&nbsp;&nbsp;&nbsp;</span> `------sql_query -------`
 `end ` $\$
 `delimiter` ;
 
