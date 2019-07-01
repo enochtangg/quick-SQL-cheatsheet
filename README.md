@@ -199,14 +199,14 @@ Pull requests are welcome. Enjoy!
 A block of code that automatically gets executed before or after an insert, update or delete statement. `old` and `new` keywords enable us to access columns in the rows affected by a trigger. Example : `new`.column_name
 
 ### **Create Trigger**:
- `delimiter` $\$
+ `delimiter` $\$<br />
 `create trigger` trigger_name
- <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>`after | before` `insert | delete | update` `on` table_name
- <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>`for each row`
-`begin`
-<span>&nbsp;&nbsp;&nbsp;&nbsp;</span> `------sql_query -------`
-`end ` $\$
-`delimiter` ;
+ <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>`after | before` `insert | delete | update` `on` table_name<br />
+ <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>`for each row`<br />
+`begin`<br />
+<span>&nbsp;&nbsp;&nbsp;&nbsp;</span> `------sql_query -------`<br />
+`end ` $\$<br />
+`delimiter` ;<br />
 
 ### **Show Triggers**: 
 * `show triggers`;
