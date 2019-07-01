@@ -220,12 +220,12 @@ A block of code that automatically gets executed before or after an insert, upda
 Stored procedure store and organise our SQL code, provide faster execution and data security.
 
 ### **Create Procedure**:
- `delimiter` $\$
-`create procedure` procedure_name`()`
-`begin`
-<span>&nbsp;&nbsp;&nbsp;&nbsp;</span> `------our_sql_query -------`
-`end ` $\$
-`delimiter` ;
+ `delimiter` $\$<br />
+`create procedure` procedure_name`()`<br />
+`begin`<br />
+<span>&nbsp;&nbsp;&nbsp;&nbsp;</span> `------our_sql_query -------`<br />
+`end ` $\$<br />
+`delimiter` ;<br />
 
 ### **Call Procedure**: 
 * `call` procedure_name`()`;
