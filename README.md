@@ -14,6 +14,7 @@ Pull requests are welcome. Enjoy!
 6. [ Altering Table Queries.](#alter)
 7. [ Creating Table Query.](#create)
 8. [ Trigger Query. ](#trigger)
+9. [ Stored Procedure. ](#proceduce)
 
 <a name="find"></a>
 # 1. Finding Data Queries
