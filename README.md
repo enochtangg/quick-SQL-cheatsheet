@@ -120,6 +120,9 @@ Pull requests are welcome. Enjoy!
 * `UPDATE` table_name `SET` column1 = value1, column2 = value2 `WHERE` condition;
 * `UPDATE` table_name `SET` column_name = value;
 
+###  **Update** from Multiple Tables
+* UPDATE table_name1 SET table_name1.col1= table2.col1  from table2 left join table3  on table2.id=table3.id where table2.name in (select name from table3)
+
 ### **DELETE**: used to delete existing records/rows in a table
 * `DELETE FROM` table_name `WHERE` condition;
 * `DELETE` * `FROM` table_name;
